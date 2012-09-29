@@ -1,0 +1,24 @@
+﻿
+http://blog.eric-bml.net/2012/09/service-memcached-pour-windows-64-bits.html
+
+Wrapper pour memcached (64 bits uniquement).
+Utilisable sous forme de service Windows ou programme console (pour diagnostics).
+
+Les paramètres sont à memcached à partir du fichier de configuration.
+Si le programme est exécuté en ligne de commande et que des arguments sont spécifiés, ils seront utilisés à la place des paramètres du fichier de configuration (pas de fusion).
+
+Les logs et la sortie console sont gérés via NLog (configuration dans NLog.config).
+
+***
+INSTALLATION / DESINSTALLATION DU SERVICE WINDOWS:
+Placer le programme dans un dossier nommé en fonction du périmètre du cache. Ce nom sera inclu dans le nom du service.
+Exécuter l'une des commandes suivantes avec les droits d'administrateur:
+MemcachedService64.exe --install
+MemcachedService64.exe --uninstall
+***
+
+Les options de ligne de commande de memcached peuvent être trouvées ici:
+http://hpux.connect.org.uk/hppd/hpux/Misc/memcached-1.4.5/man.html
+
+La version embarquée est relativement ancienne: 1.4.5 (http://downloads.northscale.com/memcached-1.4.5-amd64.zip)
+Il serait facile de la remplacer par une version plus récente (dossier Resources/memcached_1_4_5_amd64).
