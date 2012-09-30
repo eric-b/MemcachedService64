@@ -9,8 +9,8 @@ Logs and console output are managed with NLog (NLog.config).
 
 Service install / uninstall
 ------------------------
-MemcachedService64.exe --install
-MemcachedService64.exe --uninstall
+> MemcachedService64.exe --install
+> MemcachedService64.exe --uninstall
 
 Memcached options
 ------------------------
