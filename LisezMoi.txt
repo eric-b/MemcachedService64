@@ -1,5 +1,4 @@
-﻿
-http://blog.eric-bml.net/2012/09/service-memcached-pour-windows-64-bits.html
+﻿http://blog.eric-bml.net/2012/09/service-memcached-pour-windows-64-bits.html
 
 Wrapper pour memcached (64 bits uniquement).
 Utilisable sous forme de service Windows ou programme console (pour diagnostics).
@@ -22,3 +21,8 @@ http://hpux.connect.org.uk/hppd/hpux/Misc/memcached-1.4.5/man.html
 
 La version embarquée est relativement ancienne: 1.4.5 (http://downloads.northscale.com/memcached-1.4.5-amd64.zip)
 Il serait facile de la remplacer par une version plus récente (dossier Resources/memcached_1_4_5_amd64).
+
+---
+Memcached - sites officiels:
+http://memcached.org/
+http://code.google.com/p/memcached/

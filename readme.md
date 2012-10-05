@@ -20,3 +20,8 @@ http://hpux.connect.org.uk/hppd/hpux/Misc/memcached-1.4.5/man.html
 Based on version 1.4.5
 ------------------------
 http://downloads.northscale.com/memcached-1.4.5-amd64.zip
+
+See also
+--------
+http://memcached.org/
+http://code.google.com/p/memcached/
