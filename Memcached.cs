@@ -78,7 +78,7 @@ namespace MemcachedService64
 
 
             _memCachedProcess.Start();
-            _logger.Debug("Processus memcached démarré.");
+            _logger.Debug("Processus memcached démarré avec les arguments: {0}", pStartInfo.Arguments);
             _memCachedProcess.BeginOutputReadLine();
             _memCachedProcess.BeginErrorReadLine();
 
