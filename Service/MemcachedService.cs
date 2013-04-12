@@ -95,9 +95,11 @@ namespace MemcachedService64.Service
         {
             try
             {
-                if (!Environment.UserInteractive && args == null)
+                _logger.Info(string.Format("Pré-Démarrage du service. Args ({1}): {0}", String.Join(" ", args), args != null ? args.Length : -1));
+
+                if (!Environment.UserInteractive && ((args == null) || (args.Length == 0)))
                     args = AppSettings.GetMemcachedArguments();
-                _logger.Info("Démarrage du service");
+                _logger.Info("Démarrage du service. Args: " + String.Join(" ", args));
 
                 _memCached.Start(args);
             }
